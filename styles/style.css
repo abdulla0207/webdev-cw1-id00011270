@@ -41,6 +41,46 @@ body{
     cursor: pointer;
 }
 
+/* Design of the recommendation part when searchbox clicked */
+.popular-searched-box{
+    display: none;
+    position: absolute;
+    margin-top: 2px;
+    width: 35vw;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(133, 133, 133);
+}
+.popular-description{
+    margin: 15px 0 10px 15px;
+    font-size: 1.2em;
+}
+.divider{
+    border: 0;
+    height: 1px;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(156, 156, 156);
+}
+.popular-searched-items li{
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.popular-searched-items li:nth-child(1){
+    margin-top: 15px;
+}
+li a.searched-item{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 25vw 10px 0;
+}
+li a.searched-item:hover{
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
 /* Navigation style: */
 .navigation{
     width: 500px;
