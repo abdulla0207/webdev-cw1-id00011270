@@ -9,6 +9,7 @@ body{
 }
 .header{
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -273,18 +274,29 @@ li a.nav-link-signup:hover{
     display: flex;
 }
 aside.left-side-box{
-    width: 250px;
-    background-color: grey;
+    display: flex;
+    width: 220px;
+    height: 100vh;
+    background-color: rgb(199, 196, 196);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .categories-block{
-    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
     margin-left: 2vw;
 }
+.categories-lists{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .categories-lists li{
-    margin-top: 20px;
     list-style: none;
     cursor: pointer;
-    margin-left: 1.5vw;
+    margin-left: 0.5vw;
 }
 li ul{
     display: none;
