@@ -6,15 +6,17 @@
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: rgb(234, 243, 255);
 }
 .header{
+    z-index: 1;
     display: flex;
     position: fixed;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 70px;
-    background-color: rgb(9, 0, 137);
+    background-color: rgb(0, 63, 145);
 }
 .div-logo{
     margin-top: -10px;
@@ -103,19 +105,16 @@ li a.searched-item:hover{
     font-weight: 500;
     text-decoration: none;
     color: rgb(239, 247, 255);
-    padding: 15px 25px;
-}
-li a.nav-link-home, .nav-link-categories{
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 25px 30px;
 }
 .navigation li a:hover{
-    background-color: rgb(37, 26, 187);
+    background-color: rgb(0, 49, 114);
     text-decoration: underline;
 }
 li a.nav-link-login, .nav-link-signup{
     padding: 10px 20px;
     border: 1px solid white;
+    border-radius: 5px;
 }
 li a.nav-link-signup{
     padding: 10px 25px;
@@ -171,7 +170,7 @@ li a.nav-link-signup:hover{
         right: 0;
         top: 70px;
         transform: translateX(110%);
-        background-color: rgb(9, 0, 137);
+        background-color: rgb(0, 63, 145);
         border-bottom-left-radius: 30px;
     }
     li a.nav-link-categories, .nav-link-home{
@@ -272,32 +271,72 @@ li a.nav-link-signup:hover{
 
 .main-content{
     display: flex;
+    justify-content: center;
+    font-family: 'Fira Mono', monospace;
 }
-aside.left-side-box{
+.popular-courses-textbox{
     display: flex;
-    width: 220px;
-    height: 100vh;
-    background-color: rgb(199, 196, 196);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.categories-block{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vh;
-    margin-left: 2vw;
-}
-.categories-lists{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-}
-.categories-lists li{
-    list-style: none;
+    z-index: 0;
+    position: absolute;
+    width: 85%;
+    height: 30px;
+    margin-top: 30px;
     cursor: pointer;
-    margin-left: 0.5vw;
+    border-radius: 10px;
 }
-li ul{
+.popular-courses-textbox:hover{
+    color: white;
+    background-color: rgb(2, 74, 168);
+}
+.popular-courses-textbox img{
+    margin-top: 5px;
+}
+.popular-courses-heading{
+    margin-right: 30vw;
+    width: 300px;
+}
+.popular-courses-heading:hover{
+    text-decoration: underline;
+}
+.popular-courses-block{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.section-block {
+    display: block;
+    width: 317px;
+    margin-top: 50px;
+    padding: 30px 30px 20px 30px;
+    background-color: rgb(241, 240, 240);
+    border: 3px solid rgb(0, 63, 145);
+    border-radius: 25px;
+    text-align: center;
+    transition: ease-out;
+  }
+.section-block:hover{
+    box-shadow: 0px 1px 7px 3px rgba(0,0,0,0.3);
+}
+.section-block article{
     display: none;
+}
+.section-block h3{
+  margin-top: 30px;
+}
+#python-img{
+    margin-top: 40px;
+}
+#english-img{
+    margin-top: 40px;
+}
+.description{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.description:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
