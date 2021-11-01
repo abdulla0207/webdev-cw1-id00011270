@@ -30,6 +30,8 @@ function showHidePopularCourses(){
 }
 popularCoursesTextBlock.addEventListener('click', showHidePopularCourses);
 
-function descriptionOfCourses(){
-    
+function descriptionOfCourses(index){
+    for (let i = 0; i < description_pointer.length; i++) {
+        
+    }
 }

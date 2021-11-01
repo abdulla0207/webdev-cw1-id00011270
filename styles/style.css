@@ -33,7 +33,7 @@ body{
 
 /* Search box style: */
 .search{
-    width: 35vw;
+    width: 25vw;
     height: 45px;
     border-radius: 20px;
     border: 1px solid rgb(37, 37, 37);
@@ -54,7 +54,7 @@ body{
     display: none;
     position: absolute;
     margin-top: 2px;
-    width: 35vw;
+    width: 25vw;
     height: 220px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(133, 133, 133);
@@ -66,7 +66,7 @@ body{
 .divider{
     border: 0;
     height: 1px;
-    width: 30vw;
+    width: 20vw;
     margin: auto;
     text-align: center;
     background-color: rgb(175, 175, 175);
@@ -83,7 +83,7 @@ li a.searched-item{
     font-weight: 350;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 25vw 10px 0;
+    padding: 10px 15vw 10px 0;
 }
 li a.searched-item:hover{
     background-color: rgb(168, 168, 168);
@@ -92,7 +92,7 @@ li a.searched-item:hover{
 
 /* Navigation style: */
 .navigation{
-    width: 500px;
+    width: 600px;
 }
 .navigation-lists{
     display: flex;
@@ -133,10 +133,10 @@ li a.nav-link-signup:hover{
     cursor: pointer;
 }
 .burger-navigation div{
-    background-color: rgb(239, 247, 255);
+    background-color: rgb(0, 0, 0);
     height: 3px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .burger-navigation .line1{
     width: 25px;
@@ -166,7 +166,7 @@ li a.nav-link-signup:hover{
         position: fixed;
         display: flex;
         flex-direction: column;
-        height: 450px;
+        height: 480px;
         right: 0;
         top: 70px;
         transform: translateX(110%);
@@ -180,6 +180,9 @@ li a.nav-link-signup:hover{
     li a.nav-link-home{
         padding: 45px 90px;
     }
+    li a.nav-link-about-us{
+        padding: 45px 70px;
+    }
     li a.nav-link-categories{
         padding: 45px 60px;
     }
@@ -187,7 +190,10 @@ li a.nav-link-signup:hover{
         margin-bottom: 40px;
     }
     .navigation-lists li:nth-child(2){
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    .navigation-lists li:nth-child(4){
+        margin-top: 40px;
     }
     .navigation-lists li:nth-child(5){
         margin-bottom: 40px;
@@ -200,6 +206,9 @@ li a.nav-link-signup:hover{
     }
     .divider{
         width: 40vw;
+    }
+    .partners figure:nth-child(3){
+        display: none;
     }
 }
 .burger-activate{
@@ -226,6 +235,9 @@ li a.nav-link-signup:hover{
     }
     .navigation{
         order: 3;
+    }
+    .partners figure:nth-child(2){
+        display: none;
     }
 }
 
@@ -269,7 +281,7 @@ li a.nav-link-signup:hover{
     }
 }
 
-.main-content{
+.popular-courses-main-box{
     display: flex;
     justify-content: center;
     font-family: 'Fira Mono', monospace;
@@ -311,20 +323,23 @@ li a.nav-link-signup:hover{
     width: 317px;
     margin-top: 50px;
     padding: 30px 30px 20px 30px;
-    background-color: rgb(241, 240, 240);
+    background-color: #b7daf1;
     border: 3px solid rgb(0, 63, 145);
-    border-radius: 25px;
+    border-radius: 15px;
     text-align: center;
-    transition: ease-out;
-  }
+    transition: border-radius 0.8s 0s ease-out;
+}
 .section-block:hover{
-    box-shadow: 0px 1px 7px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 7px 3px rgba(0,0,0,0.9);
+    border-radius: 35px;
+    transition: border-radius 0.5s 0s ease-in;
 }
 .section-block article{
     display: none;
 }
 .section-block h3{
   margin-top: 30px;
+  font-size: 1.8em;
 }
 #python-img{
     margin-top: 40px;
@@ -339,4 +354,63 @@ li a.nav-link-signup:hover{
 .description:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+
+.partner-divider-line{
+    margin-top: 100px;
+    border: 0;
+    height: 1.5px;
+    width: 80vw;
+    border-radius: 5px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners-block{
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b9b9b9;
+}
+.partners-block h2{
+    font-size: 2em;
+}
+.partners-block p{
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+#partners-paragraph-link{
+    color: blue;
+}
+#partners-paragraph-link:hover{
+    color: rgb(2, 2, 153);
+}
+.partners{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.partners img{
+    width: 250px;
+    height: 80px;
+    margin-top: 80px;
+}
+figcaption{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+figcaption a{
+    text-decoration: none;
+    color: black;
+}
+figcaption a:hover{
+    text-decoration: underline;
+    color: blue;
 }
