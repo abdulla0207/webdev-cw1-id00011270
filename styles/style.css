@@ -239,6 +239,15 @@ li a.nav-link-signup:hover{
     .partners figure:nth-child(2){
         display: none;
     }
+    .explore-block .explore-link:last-child{
+        display: inline;
+    }
+    .contacts-block{
+        display: none;
+    }
+    .follow-block{
+        margin-top: 20px;
+    }
 }
 
 /* Design of header part of the website */
@@ -289,7 +298,6 @@ li a.nav-link-signup:hover{
 .popular-courses-textbox{
     display: flex;
     justify-content: space-around;
-    z-index: 0;
     position: absolute;
     width: 85%;
     height: 30px;
@@ -413,4 +421,96 @@ figcaption a{
 figcaption a:hover{
     text-decoration: underline;
     color: blue;
+}
+
+.free-courses-block{
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Mono', monospace;
+}
+.courses-block{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.free-courses-textblock{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.free-courses-textblock img{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.free-courses-heading{
+    margin-left: 10px;
+}
+.free-courses-textblock:hover{
+    color: white;
+    background-color: rgb(2, 74, 168);
+}
+
+/* Footer part style */
+footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(29, 27, 27);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+footer h5{
+    font-size: 1em;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+#website-name-for-footer{
+    font-size: 4em;
+}
+.additional-info-block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.additional-info-block h4{
+    font-size: 2em;
+}
+.email a{
+    text-decoration: none;
+    color: white;
+}
+.email a:hover{
+    text-decoration: underline;
+}
+.explore-link{
+    margin: 15px 0;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.explore-link:last-child{
+    display: none;
+}
+.explore-link:hover{
+    text-decoration: underline;
+}
+.contacts-block p{
+    margin: 25px 0;
+}
+.copyright-header{
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 50px;
 }
