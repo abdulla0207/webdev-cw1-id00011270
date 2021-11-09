@@ -71,6 +71,7 @@
           <div class="line3"></div>
         </div>
       </nav>
+      <script src="app.js"></script>
     </header>
     <main>
       <div class="sign-up-parent-block">
@@ -94,6 +95,7 @@
                 onfocus="this.placeholder=''"
                 onblur="this.placeholder='Full Name'"
                 required
+                id="full-name-input"
               />
               <input
                 type="email"
@@ -109,7 +111,7 @@
                 onblur="this.placeholder='Password'"
                 required
               />
-              <button>Sign Up</button>
+              <button type="submit" id="sign-up">Sign Up</button>
             </form>
             <section class="or-block">
               <p class="or-p">Or</p>
@@ -141,6 +143,6 @@
         </div>
       </div>
     </main>
-    <script src="app.js"></script>
+    <script src="signup.js"></script>
   </body>
 </html>
