@@ -524,9 +524,18 @@ footer h5{
     position: static;
 }
 
-.sign-up-parent-block{
+#sign-up-parent-block{
     display: flex;
     width: 100%;
+}
+#welcome-block{
+    display: none;
+    width: 60vw;
+    height: 400px;
+    margin: 100px 20vw;
+    background-color: white;
+    text-align: center;
+    font-size: 2.7em;
 }
 .left-side-block{
     width: 50%;
@@ -633,5 +642,8 @@ div #sign-up-form{
     .right-side-block{
         width: 100%;
         border-radius: 30px;
+    }
+    #welcome-block{
+        font-size: 2.5em;
     }
 }
