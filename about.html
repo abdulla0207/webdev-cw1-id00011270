@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Study&infin; | Sign Up</title>
+    <title>Study&infin; | About Us</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="images/tabLogo.png" />
   </head>
@@ -60,9 +60,7 @@
           <li><a href="about.html" class="nav-link-about-us">About Us</a></li>
           <li><a href="#" class="nav-link-login">Log in</a></li>
           <li>
-            <a href="signup.html" class="nav-link-signup"
-              >Sign up</a
-            >
+            <a href="signup.html" class="nav-link-signup">Sign up</a>
           </li>
         </ul>
         <div class="burger-navigation">
@@ -74,77 +72,68 @@
       <script src="app.js"></script>
     </header>
     <main>
-      <div id="sign-up-parent-block">
-        <div class="left-side-block">
-          <section class="main-section">
-            <h1 class="main-heading">
-              Study<span class="infinity-sign">&infin;</span>
-            </h1>
-            <p class="main-heading-paragraph">
-              Welcome to Study<span class="infinity-sign">&infin;</span>!
-            </p>
-          </section>
-        </div>
-        <div class="right-side-block">
-          <div class="account-block">
-            <h2>Create Account</h2>
-            <form id="sign-up-form">
-              <input
-                type="text"
-                placeholder="Full Name"
-                onfocus="this.placeholder=''"
-                onblur="this.placeholder='Full Name'"
-                required
-                id="full-name-input"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                onfocus="this.placeholder=''"
-                onblur="this.placeholder='Email Address'"
-                required
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                onfocus="this.placeholder=''"
-                onblur="this.placeholder='Password'"
-                required
-              />
-              <button type="button" id="sign-up">Sign Up</button>
-            </form>
-            <section class="or-block">
-              <p class="or-p">Or</p>
-            </section>
-            <div class="sign-up-options">
-              <button class="google-btn">
-                <img
-                  src="/images/Google__G__Logo.svg.png"
-                  alt="G"
-                  width="30px"
-                  height="30px"
-                />
-                Sign up with Google
-              </button>
-              <button class="facebook-btn" type="submit">
-                <img
-                  src="/images/1200px-Facebook_Logo_(2019).png"
-                  alt="F"
-                  width="30px"
-                  height="30px"
-                />
-                Sign up with Facebook
-              </button>
-            </div>
-            <p class="have-account">
-              Already have an account? <a href="#" class="login">Log in</a>
-            </p>
-          </div>
-        </div>
+      <div class="about-intro-block">
+        <h1 id="about-us-heading">About Us</h1>
       </div>
-      <div id="welcome-block">
+      <section class="about-block">
+        <img
+          class="about-images"
+          src="/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+          alt="students"
+        />
+        <article class="article-block">
+          <h2>About Us</h2>
+          <p>
+            Study&infin; was established in 2021. We want to provide the best
+            quality of courses and best courses to our learners. We are only
+            hiring the best teachers. That is not all, we are also want to
+            become one of the best online teaching website in Uzbekistan.
+          </p>
+        </article>
+      </section>
+      <section class="students-block">
+        <img
+          class="about-images"
+          src="/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"
+          alt="students"
+        />
+        <article class="article-block">
+          <h2>Students</h2>
+          <p>
+            Our students are one of the best. They are from all over the world
+            and you can communicate with them via group chats. Also, with them
+            you can share and collaborate and do online courses together.
+          </p>
+        </article>
+      </section>
+      <h3 id="teachers">Top Teachers</h3>
+      <div class="teachers-block">
+        <section class="teacher1">
+          <img src="images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="" />
+          <h4>John Doell</h4>
+          <p>Java Teacher. Harvard University</p>
+        </section>
+        <section class="teacher2">
+          <img src="/images/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg" alt="" />
+          <h4>Amar Ishaan</h4>
+          <p>Mathematics. Fergusson College</p>
+        </section>
+        <section class="teacher3">
+          <img
+            src="images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg"
+            alt=""
+          />
+          <h4>Christina Prozjevich</h4>
+          <p>Python. Oxford University</p>
+        </section>
+      </div>
+      <div class="review-block">
+        <h3>Review of the Website:</h3>
+        <form>
+          <textarea name="review" id="" cols="100" rows="3"></textarea>
+          <input type="submit" />
+        </form>
       </div>
     </main>
-    <script src="signup.js"></script>
   </body>
 </html>

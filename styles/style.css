@@ -110,6 +110,7 @@ li a.searched-item:hover{
     text-decoration: none;
     color: rgb(239, 247, 255);
     padding: 25px 30px;
+    transition: all 0.3s ease-in;
 }
 .navigation li a:hover{
     background-color: rgb(0, 49, 114);
@@ -256,7 +257,7 @@ li a.nav-link-signup:hover{
 }
 
 /* Design of header part of the website */
-.introduction-block{
+.introduction-block, .about-intro-block{
     width: 100%;
     height: 75vh;
     overflow: hidden;
@@ -265,7 +266,7 @@ li a.nav-link-signup:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.slogan-section{
+.slogan-section, #about-us-heading{
     margin-top: 20vh;
     margin-left: 10vw;
     color: white;
@@ -605,6 +606,9 @@ div #sign-up-form{
     background-color: rgb(101, 156, 228);
     color: white;
 }
+#sign-up-form button:focus{
+    background-color: rgb(75, 143, 233);
+}
 .or-block{
     width: 40px;
     font-size: 30px;
@@ -630,6 +634,12 @@ div #sign-up-form{
     align-items: center;
     justify-content: center;
 }
+.sign-up-options button:hover{
+    transition: all 0.5s ease-in;
+    background-color: rgb(101, 156, 228);
+    border: 1px solid rgb(1, 91, 207);
+    color: white;
+}
 .have-account{
     margin-top: 20px;
     color: rgb(53, 52, 52);
@@ -646,4 +656,74 @@ div #sign-up-form{
     #welcome-block{
         font-size: 2.5em;
     }
+    .section-block, .section-block2{
+        width: 280px;
+    }
+}
+
+/* About Us part */
+#about-us-heading{
+    font-size: 5em;
+}
+.students-block, .about-block{
+    margin: 50px 30px 0 20px;
+    margin-top: 50px;
+    margin-right: 30px;
+    display: flex;
+    position: relative;
+}
+.students-block img{
+    order: 2;
+}
+.about-images{
+    width: 470px;
+    height: 420px;
+    border-radius: 50%;
+}
+.teachers-block{
+    display: flex;
+    justify-content: space-around;
+}
+.teachers-block img{
+    width: 210px;
+    height: 220px;
+    border-radius: 50%;
+} 
+.article-block{
+    margin: 150px 20px 0 20px;
+    margin-top: 180px;
+}
+article h2{
+    margin-bottom: 30px;
+}
+article p {
+    font-weight: 300;
+}
+#teachers{
+    font-size: 46px;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+.teachers-block h4{
+    margin-top: 10px;
+    text-align: center;
+}
+.review-block{
+    margin-top: 50px;
+    width: 100%;
+}
+.review-block h3{
+    text-align: center;
+    font-size: 36px;
+}
+.review-block form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+textarea{
+    resize: none;
+}
+input{
+    padding: 20px;
 }
