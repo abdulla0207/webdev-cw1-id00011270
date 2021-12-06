@@ -5,13 +5,13 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
     background-color: #e8e8f1;
+    transition: all 0.5s ease-out;
 }
 a{
     color: blue;
 }
-.header, .header-for-signup{
+#header, #header-for-signup, #header-for-about{
     z-index: 1;
     display: flex;
     position: fixed;
@@ -20,6 +20,7 @@ a{
     width: 100%;
     height: 70px;
     background-color: rgb(0, 63, 145);
+    transition: all 0.5s ease-out;
 }
 .div-logo{
     margin-top: -10px;
@@ -128,7 +129,7 @@ li a.nav-link-signup{
 li a.nav-link-login:hover{
     background-color: rgb(37, 26, 187);
 }
-li a.nav-link-signup:hover{
+.nav-link-signup:hover{
     background-color: rgb(0, 23, 124);
 }
 
@@ -256,7 +257,7 @@ li a.nav-link-signup:hover{
     }
 }
 
-/* Design of header part of the website */
+/* Design of main part of the website */
 .introduction-block, .about-intro-block{
     width: 100%;
     height: 75vh;
@@ -301,7 +302,7 @@ li a.nav-link-signup:hover{
     justify-content: center;
     font-family: 'Fira Mono', monospace;
 }
-.popular-courses-textbox{
+.courses-textbox{
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -310,9 +311,9 @@ li a.nav-link-signup:hover{
     margin-top: 30px;
     cursor: pointer;
     border-radius: 10px;
+    color: rgb(0, 0, 0);
 }
-.popular-courses-textbox:hover{
-    color: white;
+.courses-textbox:hover{
     background-color: rgb(2, 74, 168);
 }
 .popular-courses-textbox img{
@@ -440,16 +441,6 @@ figcaption a:hover{
     flex-wrap: wrap;
     width: 85%;
 }
-.free-courses-textblock{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 80%;
-    height: 30px;
-    margin-top: 30px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 .free-courses-textblock img{
     margin-right: 10px;
     margin-top: 5px;
@@ -457,16 +448,12 @@ figcaption a:hover{
 .free-courses-heading{
     margin-left: 10px;
 }
-.free-courses-textblock:hover{
-    color: white;
-    background-color: rgb(2, 74, 168);
-}
 
 /* Footer part style */
 footer{
     margin-top: 80px;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: rgb(29, 27, 27);
     color: white;
     font-family:Arial, Helvetica, sans-serif;
@@ -519,9 +506,20 @@ footer h5{
     margin-top: 50px;
     margin-left: 50px;
 }
+#dark-light-box button{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 0;
+}
+#dark-light-box p{
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 /* Sign Up Design */
-.header-for-signup{
+#header-for-signup{
     position: static;
 }
 
@@ -659,6 +657,24 @@ div #sign-up-form{
     .section-block, .section-block2{
         width: 280px;
     }
+    .students-block, .about-block{
+        flex-wrap: wrap;
+    }
+    .students-block img{
+        margin: 0 auto;
+    } 
+    .about-block img{
+        margin: 0 auto;
+    }
+    .students-block img{
+        order: 1;
+    }
+    .article-block{
+        order: 2;
+    }
+    .article-block h2{
+        text-align: center;
+    }
 }
 
 /* About Us part */
@@ -690,14 +706,18 @@ div #sign-up-form{
     border-radius: 50%;
 } 
 .article-block{
-    margin: 150px 20px 0 20px;
-    margin-top: 180px;
+    margin: 0 20px;
+    margin-top: 80px;
 }
-article h2{
+.article-block h2{
     margin-bottom: 30px;
+    font-size: 40px;
 }
-article p {
+.article-block p {
     font-weight: 300;
+}
+.read{
+    display: none;
 }
 #teachers{
     font-size: 46px;
@@ -721,9 +741,40 @@ article p {
     display: flex;
     justify-content: space-around;
 }
-textarea{
-    resize: none;
+.review-block p{
+    margin-left: 5%;
+    font-size: 20px;
 }
-input{
+.review-block textarea{
+    resize: none;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+.review-block input{
     padding: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(70, 69, 69);
+}
+@media screen and (max-width: 800px){
+    .about-images{
+        width: 400px;
+        height: 380px;
+    }
+    .teacher3{
+        display: none;
+    }
+    .review-block textarea{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .about-images{
+        width: 350px;
+        height: 320px;
+    }
 }
