@@ -5,6 +5,7 @@ const text = document.getElementById('review-text')
 input_button.addEventListener('click', function(e){
     e.preventDefault();
     if(!(text.value.length == 0)){
+        review_block.style.display = "block";
         let heading = document.createElement("h2")
         let heading_text = document.createTextNode("Anonymous:"); 
         heading.appendChild(heading_text)

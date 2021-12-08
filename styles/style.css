@@ -11,7 +11,8 @@ body{
 a{
     color: blue;
 }
-#header, #header-for-signup, #header-for-about{
+#header, #header-for-signup, #header-for-about, .header-for-jscourse{
+    overflow: hidden;
     z-index: 1;
     display: flex;
     position: fixed;
@@ -21,6 +22,9 @@ a{
     height: 70px;
     background-color: rgb(0, 63, 145);
     transition: all 0.5s ease-out;
+}
+#header-for-jscourse{
+    margin-bottom: 20vh;
 }
 .div-logo{
     margin-top: -10px;
@@ -777,6 +781,14 @@ div #sign-up-form{
     color: white;
     background-color: rgb(70, 69, 69);
 }
+#reviews{
+    display: none;
+    color: white;
+    margin: 30px 30px 30px 50px;
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(29, 27, 27);
+    border-radius: 30px;
+}
 @media screen and (max-width: 800px){
     .about-images{
         width: 400px;
@@ -794,4 +806,36 @@ div #sign-up-form{
         width: 350px;
         height: 320px;
     }
+}
+
+/* JavaScript course styling */
+header.header-for-jscourse{
+    position:fixed;
+}
+.js-course-box{
+    display: flex;
+    justify-content: space-between;
+}
+.course-description-box img{
+    width: 180px;
+    height: 200px;
+}
+.course-description-box{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+.paragraph{
+    padding-top: 90px;
+}
+#js-heading{
+    overflow: hidden;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
