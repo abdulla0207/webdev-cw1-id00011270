@@ -815,10 +815,11 @@ header.header-for-jscourse{
 .js-course-box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .course-description-box img{
     width: 180px;
-    height: 200px;
+    height: 190px;
 }
 .course-description-box{
     text-align: center;
@@ -830,7 +831,9 @@ header.header-for-jscourse{
     border: 1px solid black;
 }
 .paragraph{
-    padding-top: 90px;
+    padding-top: 40px;
+    margin-left: 40px;
+    width: 70%;
 }
 #js-heading{
     overflow: hidden;
@@ -838,4 +841,21 @@ header.header-for-jscourse{
     padding-top: 90px;
     font-size: 2.5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p#description-p, p#text-p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#vars, #loops, #conditions{
+    width: 85%;
+    height: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+#vars:hover, #loops:hover, #conditions:hover{
+    background-color: rgb(2, 74, 168);
 }
