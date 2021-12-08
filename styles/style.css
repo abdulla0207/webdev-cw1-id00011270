@@ -333,8 +333,9 @@ li a.nav-link-login:hover{
     flex-wrap: wrap;
     width: 85%;
 }
+
+/* Courses block styling */
 .section-block, .section-block2 {
-    cursor: pointer;
     display: block;
     width: 317px;
     margin-top: 20px;
@@ -355,6 +356,13 @@ li a.nav-link-login:hover{
   margin: 10px 0;
   font-size: 1.8em;
 }
+h3 .course-name{
+    text-decoration: none;
+    color: black;
+}
+h3 .course-name:hover{
+    text-decoration: underline;
+}
 #python-img, #english-img{
     margin-top: 20px;
 }
@@ -365,6 +373,9 @@ li a.nav-link-login:hover{
 .description:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+article p{
+    margin-bottom: 10px;
 }
 
 .partner-divider-line{

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>JavaScript | Free Course</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/tabLogo.png" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="div-logo">
+        <h1 class="logo-header">
+          <a href="index.html" class="logo-header-link"
+            >Study<span class="infinity-sign">&infin;</span></a
+          >
+        </h1>
+      </div>
+      <form class="search-box">
+        <input
+          type="text"
+          placeholder="Search for anything..."
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='Search for anything...'"
+          class="search"
+        />
+        <div class="popular-searched-box">
+          <p class="popular-description">Popular now</p>
+          <hr class="divider" />
+          <ul class="popular-searched-items">
+            <li><a href="#" class="searched-item">Java</a></li>
+            <li><a href="#" class="searched-item">Math</a></li>
+            <li><a href="#" class="searched-item">Python</a></li>
+            <li><a href="#" class="searched-item">English</a></li>
+          </ul>
+        </div>
+        <img
+          src="/images/blackmagnifier.png"
+          alt="search"
+          class="magnifier-img"
+          width="30px"
+          height="25px"
+        />
+      </form>
+      <nav class="navigation">
+        <ul class="navigation-lists">
+          <li><a href="index.html" class="nav-link-home">Home</a></li>
+          <li><a href="#" class="nav-link-categories">Categories</a></li>
+          <li><a href="about.html" class="nav-link-about-us">About Us</a></li>
+          <li><a href="#" class="nav-link-login">Log in</a></li>
+          <li>
+            <a href="signup.html" class="nav-link-signup">Sign up</a>
+          </li>
+        </ul>
+        <div class="burger-navigation">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <script src="javascript/app.js"></script>
+    </header>
+    <main>
+      <div>
+        <div class="paragraph">
+          <section>
+            <h1>JavaScript - Introduction</h1>
+            <p id="js-description"></p>
+          </section>
+          <div class="lessons-box">
+              <h3>Variables</h3>
+              <h3>Conditional Statement</h3>
+              <h3>Loops</h3>
+          </div>
+        </div>
+        <div class="course-description-box">
+            <img src="/images/jslogo-removebg-preview.png" alt="JS">
+            <section>
+                <h2>JavaScript</h1>
+                <p></p>
+                <span>Free</span>
+            </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
