@@ -859,3 +859,39 @@ p#description-p, p#text-p{
 #vars:hover, #loops:hover, #conditions:hover{
     background-color: rgb(2, 74, 168);
 }
+
+/* Java Course Style */
+.payment-box{
+    width: 50%;
+    height: 300px;
+    margin-top: 10vw;
+    margin-left: 25vw;
+    background-color: aqua;
+}
+.payment-box h1{
+    text-align: center;
+    margin: 20px 0;
+}
+#card-form{
+    margin-left: 20px;
+}
+#card-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+#card-form input{
+    width: 80%;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.payment-box div{
+    display: flex;
+    justify-content: space-around;
+}
+#form2{
+    display: flex;
+    justify-content: space-around;
+}
