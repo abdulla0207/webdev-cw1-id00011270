@@ -48,6 +48,12 @@ a{
 .magnifier-img{
     display: none;
     cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+.dropdown-img{
+    width: 20px;
+    height: 20px;
 }
 .magnifier-search{
     display: none;
@@ -363,8 +369,32 @@ h3 .course-name{
 h3 .course-name:hover{
     text-decoration: underline;
 }
-#python-img, #english-img{
+#python-img, .english-img{
     margin-top: 20px;
+}
+.english-img{
+    width: 150px;
+    height: 100px;
+}
+#algebra-img{
+    width: 110px;
+    height: 100px;
+}
+.css-img{
+    width: 120px;
+    height: 120px;
+}
+#python-img{
+    width: 120px;
+    height: 90px;
+}
+#js-img{
+    width: 105px;
+    height: 90px;
+}
+.java-img{
+    width: 150px;
+    height: 120px;
 }
 .description{
     font-size: 20px;
@@ -868,7 +898,6 @@ div.payment-box{
     margin-top: 100px;
     margin-left: 25vw;
     background-color: rgb(211, 212, 212);
-    font-family: 'Roboto' sans-serif;
 }
 .payment-box h1{
     text-align: center;
