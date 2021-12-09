@@ -268,7 +268,7 @@ li a.nav-link-login:hover{
     width: 100%;
     height: 75vh;
     overflow: hidden;
-    background-image: url('/images/students.jpg');
+    background-image: url('https://i.ibb.co/D72qSyr/students.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
