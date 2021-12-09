@@ -8,6 +8,8 @@ var about_description_text = {
 const about = document.getElementById('about-p')
 const students = document.getElementById('students-p')
 
+// descriptions() function takes the keys of about_description_text array and assigns it to local variables
+// then it appends the content of variable into html tags
 function descriptions(){
     let about_text = document.createTextNode(about_description_text.about_us);
     about.appendChild(about_text);
@@ -15,6 +17,9 @@ function descriptions(){
     students.appendChild(students_text)
 }
 descriptions()
+
+// This function will work when users will leave any comment or review of the website.
+// Basically, this function will take the text which typed the user in input box and shows it in html page
 input_button.addEventListener('click', function(e){
     e.preventDefault();
     if(!(text.value.length == 0)){

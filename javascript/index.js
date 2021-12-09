@@ -29,7 +29,8 @@ function showHidePopularCourses(){
 popularCoursesTextBlock.addEventListener('click', showHidePopularCourses);
 
 
-// This function will change the color and background color of elements to dark color
+// This function will change the color and background color of elements to dark color 
+// ACTIVE ONLY WITH HOMEPAGE
 function darkModeWhenClicked(){
     for (let index = 0; index < headers.length; index++) {
         headers[index].style.backgroundColor = 'rgb(41, 40, 40)';
@@ -47,6 +48,7 @@ function darkModeWhenClicked(){
 dark_btn.addEventListener('click', darkModeWhenClicked);
 
 // This function will change the background and content color to the initial color after the dark mode was on
+// ACTIVE ONLY WITH HOMEPAGE
 function lightModeWhenClicked(){
     for (let index = 0; index < headers.length; index++) {
         headers[index].style.backgroundColor = blueColor;
