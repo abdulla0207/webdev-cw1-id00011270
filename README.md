@@ -6,3 +6,4 @@ This is a task of Coursework 1 for Web Technology Module. The project is purely 
 
 
 Link to github repository: https://github.com/abdulla0207/webdev-cw1-id00011270 
+Link to the website: https://00011270.netlify.app/
