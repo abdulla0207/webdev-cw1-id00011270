@@ -856,6 +856,11 @@ header.header-for-jscourse{
     background-color: white;
     border: 1px solid black;
 }
+.lessons-box{
+    margin-left: 50px;
+    position: relative;
+    word-wrap: break-word;
+}
 .paragraph{
     padding-top: 40px;
     margin-left: 40px;
@@ -881,10 +886,54 @@ p#description-p, p#text-p{
     border-radius: 10px;
     color: rgb(0, 0, 0);
     padding: 5px;
+    font-size: 1.5rem;
 }
 #vars:hover, #loops:hover, #conditions:hover{
     color: white;
     background-color: rgb(2, 74, 168);
+}
+#variables-box{
+    display: none;
+    margin-top: 10px;
+    width: 90%;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(157, 180, 211);
+}
+code{
+    color: red;
+}
+#variables-box h4{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 20px 0;
+}
+#variables-box h5{
+    font-size: 1.8rem;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+#variables-box p{
+    width: 90%;
+    margin: 0 auto 20px auto;
+    font-size: 1.2rem;
+}
+#var-list{
+    margin-left: 50px;
+    font-size: 1.15rem;
+}
+#var-list li{
+    margin-top: 20px;
+}
+@media screen and (max-width: 1190px) {
+    #js-section{
+        width: 100%;
+        text-align: center;
+    }
+    .course-description-box{
+        display: none;
+    }
 }
 
 /* Java Course Style */

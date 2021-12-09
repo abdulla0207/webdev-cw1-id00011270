@@ -21,7 +21,7 @@
     <link rel="icon" href="images/tabLogo.png" />
   </head>
   <body>
-     <header class="header-for-jscourse">
+    <header class="header-for-jscourse">
       <div class="div-logo">
         <h1 class="logo-header">
           <a href="index.html" class="logo-header-link"
@@ -70,7 +70,7 @@
         </div>
       </nav>
       <script src="javascript/app.js"></script>
-    </header> 
+    </header>
     <main>
       <h1 id="js-heading">JavaScript - Introduction</h1>
       <div class="js-course-box">
@@ -79,20 +79,56 @@
             <p id="description-p"></p>
             <p id="text-p"></p>
           </section>
-          <div class="lessons-box">
-              <h3 id="vars">Variables</h3>
-              <div id="variables-box"></div>
-              <h3 id="conditions">Conditional Statement</h3>
-              <h3 id="loops">Loops</h3>
-          </div>
         </div>
         <div class="course-description-box">
-          <img src="/images/jslogo-removebg-preview.png" alt="JS">
+          <img src="/images/jslogo-removebg-preview.png" alt="JS" />
           <section>
-              <h2>JavaScript</h2>
-              <span id="cost">Free</span>
+            <h2>JavaScript</h2>
+            <span id="cost">Free</span>
           </section>
+        </div>
       </div>
+      <div class="lessons-box">
+        <h3 id="vars">Variables</h3>
+        <div id="variables-box">
+          <section>
+            <h4>Everything you need to know about Variables</h4>
+            <p>
+              Variables are containers to store data. There are 3 variables in
+              JavaScript: They are: <code>var</code>, <code>let</code> and
+              <code>const</code>.
+            </p>
+            <p>
+              In JavaScript you can store any value in these variables. For
+              example <code>var</code> can take integers, String, boolean and
+              etc., whereas in other languages such as Java you have to specify
+              variable type to use different data.
+            </p>
+          </section>
+          <section>
+            <h5>Const Variable:</h5>
+            <p>
+              <code>Const</code> variable cannot be redeclared, in simple words
+              if you assign a value you cannot change it to another.
+            </p>
+            <p>
+              One of the examples of Const variable is PI value. PI value is
+              3.14 and it will never be changed. So if you need this kind of
+              data, use CONST!
+            </p>
+          </section>
+          <section>
+            <h5>Naming Variables:</h5>
+            <p>When you name your variable consider this:</p>
+            <ul id="var-list">
+              <li>Name of the variable can contain dollar sign, letters and underscores</li>
+              <li>Names are case sensative</li>
+              <li>JavaScript variables (reserved by JS itself) canont be used as var names</li>
+            </ul>
+          </section>
+        </div>
+        <h3 id="conditions">Conditional Statement</h3>
+        <h3 id="loops">Loops</h3>
       </div>
       <script src="/javascript/js-course.js"></script>
     </main>
